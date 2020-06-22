@@ -26,7 +26,11 @@
         <div id="navbar" class="collapse navbar-collapse">
           <ul class="nav navbar-nav navbar-right">            
             <li><a href="#info1">About</a></li>
+            <li><a href="#info1">Events</a></li>
             <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="#info1">Activities</a></li>
+            <li><a href="#info1">Achievements</a></li>
+            <li><a href="#info1">About Team</a></li>
             <li><a href="#contact">Contact</a></li>
             <li><a href="read-more.html">Read more</a></li>
           </ul>
@@ -140,19 +144,27 @@
           <form name='contact' method='POST'><input type='hidden' name='form-name' value='contact' />
                 <div class="form-group">
                   <label>Name: </label>
-                  <input class="form-control" type="text" name="name" value="" placeholder="Enter Name">
+                  <input class="form-control" type="text" name="name" value="" placeholder="Enter Name" required>
                 </div>
                 <div class="form-group">
                   <label>Phone: </label>
-                  <input class="form-control" type="number" name="number" value="" placeholder="Enter number">
+                  <input class="form-control" type="number" name="number" value="" placeholder="Enter number" required>
                 </div>
                 <div class="form-group">
                   <label>Email: </label>
-                  <input class="form-control" type="email" name="email" value="" placeholder="Enter Email">
+                  <input class="form-control" type="email" name="email" value="" placeholder="Enter Email" required>
                 </div>
                 <div class="form-group">
-                  <label>Message: </label>
-                  <textarea class="form-control" name="message" value="" placeholder="Enter Message"></textarea>
+                  <label>Program: </label>
+                  <div>
+                    <select name="program" required>
+                      <option value="Select Program">Select Program</option>
+                      <option value="volvo">Program A</option>
+                      <option value="saab">Program B</option>
+                      <option value="fiat">Program C</option>
+                      <option value="audi">Program D</option>
+                    </select>
+                  </div>
                 </div>
                 <button class="btn btn-default">Submit</button>
              </form>
